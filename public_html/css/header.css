@@ -213,7 +213,15 @@
     line-height: 50px;
 }
 
-
-
+@media screen and (min-width: 981px)
+.nav-top .wpsight-menu > .first-menu-item > a {
+    border-left: 2px solid rgba(255,255,255,.05);
+}
+@media screen and (min-width: 981px)
+.nav-top .wpsight-menu a {
+    border-right: 2px solid rgba(255,255,255,.05);
+    font-size: inherit;
+    padding: 0 20px;
+}
 
 
