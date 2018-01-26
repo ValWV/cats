@@ -235,6 +235,11 @@
     padding: 0 10px;
     text-decoration: none;
 }
-
+.fa-feed:before, .fa-rss:before {
+    content: "\f09e";
+}
+.fa-feed:before, .fa-rss:before {
+    content: "\f09e";
+}
 
 
