@@ -195,7 +195,8 @@
 
 }
 .site-header-top .nav-top, .site-header-top-info {
-    font-size: .8em;
+    font-size: 1em;
+    font: inherit;
 }
 .wpsight-menu.wpsight-menu-right {
     text-align: right;
