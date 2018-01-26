@@ -140,3 +140,8 @@
 	}
 
 }
+.wpsight-menu .menu-item {
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+}
