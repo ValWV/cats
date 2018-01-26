@@ -145,3 +145,51 @@
     padding: 0;
     text-align: left;
 }
+/** Top menu */
+
+.nav-top .menu-item i._before {
+	margin-right: .5em;
+}
+
+.nav-top .menu-item i._mi {
+	margin-top: -.2em;
+}
+
+@media screen and (min-width: 981px) {
+	
+	.nav-top .wpsight-menu a {
+		border-right: 2px solid rgba(255,255,255,.05);
+		font-size: inherit;
+		padding: 0 20px;
+	}
+	
+	.nav-top .wpsight-menu > .first-menu-item > a {
+		border-left: 2px solid rgba(255,255,255,.05);
+	}
+
+	.nav-top .wpsight-menu .sub-menu {
+		margin-left: 0;
+	}
+	
+	.nav-top .wpsight-menu .sub-menu .sub-menu {
+		margin-left: 200px;
+	}
+	
+	.nav-top .wpsight-menu .sub-menu a {
+		border: 0;
+	}
+
+}
+
+@media screen and (max-width: 980px) {
+	
+	.nav-top {
+		margin: 0 -6%;
+	}
+
+	.wpsight-menu .menu-item.menu-item-has-children > a:after,
+	.wpsight-menu .sub-menu .menu-item.menu-item-has-children > a:after {
+		display: none;
+	}
+
+}
