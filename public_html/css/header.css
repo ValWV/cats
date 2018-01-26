@@ -1,0 +1,142 @@
+/* Header
+================================================== */
+
+.site-header-top {
+	color: #fff;
+	vertical-align: middle;
+}
+
+.site-header-top .nav-top,
+.site-header-top-info {
+	font-size: .8em;	
+}
+
+.site-header-top-info {
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.site-header-top-info .icon:before {
+	color: #ffed00;
+	font-size: 1.75em;
+	left: -20px;
+	line-height: inherit;
+	position: absolute;
+	vertical-align: middle;
+	width: 20px;
+}
+
+.site-header-bg {
+	background-image: url('assets/images/bg-site-header-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+}
+
+.site-header-bg-inner {
+	background-color: rgba(129,207,224,.6);
+}
+
+.site-header.site-section {
+	color: #fff;
+	padding-bottom: 0;
+	padding-top: 40px;
+}
+
+.site-header .container {
+	position: relative;
+}
+
+.site-header-title {
+	float: left;
+	width: auto;
+}
+
+.site-header-title .site-title {
+	color: #fff;
+	display: inline-block;
+	line-height: 80px;
+	margin-bottom: 0;
+	margin-right: 10px;
+}
+
+.site-header-title .site-title a:hover {
+	color: inherit;
+}
+
+.site-header-title .site-description {
+	display: inline-block;
+	font-size: smaller;
+	line-height: normal;
+	opacity: .75;
+}
+
+.site-header nav {
+	bottom: 0;
+	position: absolute;
+	right: 0;
+}
+
+#banner {
+	padding: 160px 20px 200px;
+}
+
+@media screen and (max-width: 980px) {
+	
+	.site-header-top-info {
+		margin: 20px 0;
+		text-align: center;
+	}
+	
+	.site-header-bg {
+		background-position: center;
+	}
+	
+	.site-header.site-section {
+		background-position: center top;
+		padding-top: 40px;
+	}
+	
+	.site-header .container {
+		border-bottom: 0;
+	}
+	
+	.site-header-title {
+		float: none;
+	}
+	
+	.site-header-title .site-title {
+		line-height: normal;
+		margin-bottom: 15px;
+		margin-right: 0;
+	}
+	
+	.site-header-title .site-title,
+	.site-header-title .site-description {
+		display: block;
+		text-align: center;
+	}
+	
+	.site-header-title .site-description {
+		margin-bottom: 40px;
+	}
+	
+	.site-header nav {
+		bottom: auto;
+		float: none;
+		position: relative;
+		right: auto;
+	}
+	
+	.site-header .container,
+	.nav-secondary .container {
+		width: 100%;
+	}
+	
+	#banner {
+		padding: 60px 20px 40px;
+	}
+
+}
