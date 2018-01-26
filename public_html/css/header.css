@@ -200,7 +200,7 @@
 .wpsight-menu.wpsight-menu-right {
     text-align: right;
 }
-main.min.css?ver=3.0.0:1
+
 .wpsight-menu {
     line-height: 1;
     margin: 0;
@@ -208,8 +208,5 @@ main.min.css?ver=3.0.0:1
     text-align: left;
     width: 100%;
 }
-main.min.css?ver=3.0.0:1
-ul {
-    list-style: disc;
-    padding-left: 1em;
-}
+
+
