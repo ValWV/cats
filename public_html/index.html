@@ -18,7 +18,7 @@
                                   </a>
                                </div>
                            <div class="col-6 menu">
-                                   <div class="modal-instance pull-right">
+                                   <div class="pull-right">
                                        <a class="menu-icon" href="#" style="padding: 0.5em;">
                                            <i class="fas fa-bars"></i>
                                        </a>
@@ -128,14 +128,28 @@
 <section class="section-bg black">
   <div class="row">
     <div class="col-8">
+
+<form>
+  <div class="contact">
+  <div class="contact-item">
 <label for"name">Name</label>
-<input class="validate-required" type="text" name="name" id="name" placeholder="Your Name">
+<input class="" type="text" name="name" id="name" placeholder="Your Name" required>
+</div>
+<div class="contact-item">
 <label for"mail">Mail</label>
-<input class="validate-required" type="text" name="mail" id="mail" placeholder="Your mail">
+<input class="" type="text" name="mail" id="mail" placeholder="Your mail" required>
+</div>
+
+
 <div class="message">
-<label></label>
+<label for="message">Comment</label>
 <textarea name="message" id="message" rows="8"></textarea>
 </div>
+<input class="button" type="submit" value="Send">
+<input class="button" type="reset" value="Clear">
+</div>
+
+</form>
     </div>
     <div class="col-4">
 
