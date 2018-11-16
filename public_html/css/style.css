@@ -1,0 +1,521 @@
+body {
+    background: #ffffff;
+    margin: 0;
+}
+body {
+    overflow-x: hidden;
+}
+body {
+  font-size: 1em;
+  line-height: 1.8em;
+  font-family: 'Open Sans', sans-serif;
+  color: #666666;
+  font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, p, ul, a {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 2em;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.height-100, .height-90, .height-80, .height-70, .height-60, .height-50, .height-40, .height-30, .height-20, .height-10 {
+    height: auto;
+    padding: 5em 0;
+}
+.pos-relative {
+  position: relative;
+}
+.pos-absolute {
+  position: absolute;
+}
+img {
+  max-width: 100%;
+  margin-bottom: 1.85714286em;
+}
+.imagebg {
+    position: relative;
+}
+
+section {
+    display: block;
+}
+.parallax {
+  overflow: hidden;
+}
+.parallax .background-image-holder {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+}
+
+
+
+.background-image-holder {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  z-index: 0;
+  transition: opacity .3s linear;
+  -webkit-transition: opacity .3s linear;
+  opacity: 0;
+  background: #252525;
+}
+.background-image-holder:not([class*='col-']) {
+  width: 100%;
+}
+.background-image-holder.background--bottom {
+  background-position: 50% 100% !important;
+}
+.background-image-holder.background--top {
+  background-position: 50% 0% !important;
+}
+.image--light .background-image-holder {
+  background: none;
+}
+.background-image-holder img {
+  display: none;
+}
+[data-overlay] {
+  position: relative;
+}
+[data-overlay]:before {
+  position: absolute;
+  content: '';
+  background: #252525;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+[data-overlay] *:not(.container):not(.background-image-holder) {
+  z-index: 2;
+}
+[data-overlay].image--light:before {
+  background: #fff;
+}
+[data-overlay].bg--primary:before {
+  background: #4a90e2;
+}
+[data-overlay="1"]:before {
+  opacity: 0.1;
+}
+[data-overlay="2"]:before {
+  opacity: 0.2;
+}
+[data-overlay="3"]:before {
+  opacity: 0.3;
+}
+[data-overlay="4"]:before {
+  opacity: 0.4;
+}
+[data-overlay="5"]:before {
+  opacity: 0.5;
+}
+[data-overlay="6"]:before {
+  opacity: 0.6;
+}
+[data-overlay="7"]:before {
+  opacity: 0.7;
+}
+[data-overlay="8"]:before {
+  opacity: 0.8;
+}
+[data-overlay="9"]:before {
+  opacity: 0.9;
+}
+[data-overlay="10"]:before {
+  opacity: 1;
+}
+[data-overlay="0"]:before {
+  opacity: 0;
+}
+[data-scrim-bottom] {
+  position: relative;
+}
+[data-scrim-bottom]:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 80%;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #252525 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, #252525));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #252525 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #252525 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #252525 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #252525 100%);
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.imagebg:not(.image--light) h1, .imagebg:not(.image--light) h2, .imagebg:not(.image--light) h3, .imagebg:not(.image--light) h4, .imagebg:not(.image--light) h5, .imagebg:not(.image--light) h6, .imagebg:not(.image--light) p, .imagebg:not(.image--light) ul, .imagebg:not(.image--light) span, .imagebg:not(.image--light) blockquote {
+    color: #fff;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.text-center {
+    text-align: center !important;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+ {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  }
+  .col-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none; }
+
+  .col-1 {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%; }
+
+  .col-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%; }
+
+  .col-3 {
+    flex: 0 0 25%;
+    max-width: 25%; }
+
+  .col-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
+
+  .col-5 {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; }
+
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%; }
+
+  .col-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%; }
+
+  .col-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
+
+  .col-9 {
+    flex: 0 0 75%;
+    max-width: 75%; }
+
+  .col-10 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%; }
+
+  .col-11 {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%; }
+
+  .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%; }
+
+  .height-100 {
+      height: 100vh;
+    }
+
+
+
+  .box {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+}
+
+
+
+@media all and (min-height: 600px) and (min-width: 767px) {
+  .height-10 {
+    height: 10vh;
+  }
+  .height-20 {
+    height: 20vh;
+  }
+  .height-30 {
+    height: 30vh;
+  }
+  .height-40 {
+    height: 40vh;
+  }
+  .height-50 {
+    height: 50vh;
+  }
+  .height-60 {
+    height: 60vh;
+  }
+  .height-70 {
+    height: 70vh;
+  }
+  .height-80 {
+    height: 80vh;
+  }
+  .height-90 {
+    height: 90vh;
+  }
+  .height-100 {
+    height: 100vh;
+  }
+}
+
+
+.imagebg .container:not(.pos-absolute) {
+    position: relative;
+}
+.imagebg .container {
+    z-index: 2;
+}
+.pos-vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.hover-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+
+.box-item-4 {
+  float: left;
+      width: 40%;
+}
+.col-5 {
+    float: left;
+    width: 41.66%;
+}
+.box-item-8 {
+  float: left;
+      width: 60%;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media (min-width: 768px){
+.box-item-8 .box-item-4 {
+    flex: 0 0 50%;
+    width: 50%;
+}
+}
+@media (min-width: 576px) {
+  .box-item-8 .box-item-4 {
+      flex: 0 0 100%;
+      width: 100%;
+ }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+.box-item-4 {
+    float: left;
+    width: 100%;
+}
+.box-item-8 {
+    float: left;
+    width: 100%;
+}
+}
+.hover-element {
+    position: relative;
+    overflow: hidden;
+}
+.hover-element .hover-element__reveal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.hoveff:hover{
+    opacity:unset !important;
+    z-index:3;
+    image: rgba(158, 139, 139, 0.51);
+}
+.overlay:before{
+  position: absolute;
+  margin: 0 0 0 -25px;
+  top: 0;
+  left: 50%;
+  content:" ";
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  transition: all 1000ms ease;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Antu_edit-find-mail.svg/768px-Antu_edit-find-mail.svg.png')50% / 70px no-repeat;
+}
+.overlay:hover:before{
+  top: 50%;
+  opacity: 1;
+}
+.overlay:hover img {
+  opacity: 0.5;
+  transition: opacity 1000ms ease;
+  -webkit-backface-visibility: hidden;
+  z-index:5;
+}
+
+
+
+
+[data-img] {
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+  }
+  [data-img="1"] {
+        background: url('http://3.bp.blogspot.com/-080g21eoexw/TneUOrD5IaI/AAAAAAAAAO8/5HKRbKQIJcw/s1600/Japan.jpg');
+  }
+  [data-img="2"] {
+        background: url('http://i.cdn-surfline.com/surfnews/images/2013/08_august/padang_finals/full/MICKCURLEY7701.jpg');
+  }
+  [data-img="3"] {
+        background: url('http://idata.over-blog.com/3/69/76/43/evenements/Conference-Jeandel---Mars-2012/Envisat---MERIS---Phytoplancton---Atlantique---Falklands---.jpg');
+      }
+  [data-img="4"] {
+        background: url('http://www.kenbradshaw.com/surf-school/wp-content/uploads/2010/02/Sunset_3_-e1266549163749.jpg');
+  }
+  [data-img="5"] {
+        background: url('https://earth.nullschool.net/sample.jpg');
+  }
+  [data-img="6"] {
+        background: url('https://umaine.edu/news/wp-content/uploads/sites/3/2016/08/Phytoplankton-News-feature.jpg');
+  }
+
+
+
+.header {
+  z-index: 99;
+  width: 100%;
+  position: absolute;
+  text-transform: uppercase;
+  padding: 2em 5rem;
+/*  display: flex !important;*/
+}
+.logo {
+
+}
+.name {
+  background-color: #1e1e1e;
+  padding: 0 1em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+.menu{
+  justify-content: flex-end !important;
+  display: flex !important;
+}
+
+.menu-icon {
+  width: 2em;
+  height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background: #fff;
+    display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+/*Footer*/
+  .footer {
+      background: #1b1b1b;
+          padding: 3.7em 7em;
+  }
+.footer-item {
+  margin-bottom: 3em;
+}
+.social-item {
+  display: inline-block;
+  padding: 0;
+}
+li.social-item:not(:last-child) {
+    margin-right: 1.8em;
+}
+.icon {
+  font-size: 2em;
+}
+.hover-element:hover {
+      background: none !important;
+}
+
+
+
+.section-bg {
+  padding: 7rem;
+}
+.section-bg h1 {
+  border-bottom: 3px solid;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+      border-image: linear-gradient(to right, #3a7bdb 0%, #c9ffe9 100%);
+  border-image-slice: 1;
+}
+.section-bg h2 {
+    border-bottom: 2px solid #4a90e2;
+    margin-bottom: 1em;
+    padding-bottom: 0.2em;
+}
+.button {
+  color: fff;
+  background: #4a90e2;
+  padding: 0.5em 2em;
+  position: relative;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 2em;
+}
+
+
+.white {
+  background: none;
+}
+
+
+.black:not(.white) h1, .black:not(.white) h2, .black:not(.white) h3, .black:not(.white) h4, .black:not(.white) h5, .black:not(.white) h6, .black:not(.white) p, .black:not(.white) ul, .black:not(.white) blockquote {
+    color: #fff;
+
+}
+.section-bg.black {
+    background: #252525;
+}
+
+
+.footer-item span:not(:last-child) {
+    margin-right: 0.7em;
+    border-right: 1px solid #4b4a4a;
+    padding-right: 0.7em;
+}
+
+.massage {
+    width: 100%;
+}
