@@ -588,6 +588,11 @@ left: 0;
 font-size: 20px;
 margin: 10em 30em;
 }
+.float::after {
+    content: "";
+    clear: both;
+    display: block;
+}
 
 @media (max-width: 768px) and (min-width: 320px) {
   .menu {
@@ -659,12 +664,3 @@ font-weight: 600;
 .menu-button {
 	float: right;
 }
-.floatfix::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-
-
-
