@@ -14,9 +14,9 @@
   margin: 2em 0;
 }
 .post-name {
-  width: max-content;
+  width: -moz-min-content;
+  width: -webkit-min-content;
 }
-
 .section-bg h1 {
   width: 100%;
 }
