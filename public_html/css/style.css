@@ -508,7 +508,20 @@ body {
 }
  .menu {
      font-size: 20px;
-     margin: 10em 30em;
+     margin: 10em;
+}
+.menu-buttons {
+    margin: 0 20em;
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+  .menu-buttons {
+      margin: 0 10em;
+  }
+}
+@media (max-width: 768px) and (min-width: 320px) {
+  .menu-buttons {
+      margin: 0;
+  }
 }
  .float::after {
      content: "";
