@@ -513,8 +513,17 @@ body {
 .menu-buttons {
      margin: 0 25vw;
 }
-
-@media (max-width: 768px) and (min-width: 320px) {
+@media (max-width: 1199px) and (min-width: 768px) {
+  .menu-buttons {
+      margin: 0 15vw;
+    }
+}
+@media (max-width: 768px) and (min-width: 544px) {
+  .menu-buttons {
+      margin: 0 15vw;
+    }
+}
+@media (max-width: 544px) and (min-width: 320px) {
   .menu-buttons {
       margin: 0;
   }
