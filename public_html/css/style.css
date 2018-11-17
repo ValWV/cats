@@ -43,16 +43,6 @@ img {
 section {
     display: block;
 }
-.parallax {
-  overflow: hidden;
-}
-.parallax .background-image-holder {
-  transition: none !important;
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-}
-
-
 
 .background-image-holder {
   position: absolute;
@@ -70,15 +60,7 @@ section {
 .background-image-holder:not([class*='col-']) {
   width: 100%;
 }
-.background-image-holder.background--bottom {
-  background-position: 50% 100% !important;
-}
-.background-image-holder.background--top {
-  background-position: 50% 0% !important;
-}
-.image--light .background-image-holder {
-  background: none;
-}
+
 .background-image-holder img {
   display: none;
 }
@@ -95,14 +77,8 @@ section {
   left: 0;
   z-index: 1;
 }
-[data-overlay] *:not(.container):not(.background-image-holder) {
+[data-overlay] *:not(.background-image-holder) {
   z-index: 2;
-}
-[data-overlay].image--light:before {
-  background: #fff;
-}
-[data-overlay].bg--primary:before {
-  background: #4a90e2;
 }
 [data-overlay="1"]:before {
   opacity: 0.1;
@@ -138,10 +114,7 @@ section {
   opacity: 0;
 }
 
-.col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
+
 .imagebg:not(.image--light) h1, .imagebg:not(.image--light) h2, .imagebg:not(.image--light) h3, .imagebg:not(.image--light) h4, .imagebg:not(.image--light) h5, .imagebg:not(.image--light) h6, .imagebg:not(.image--light) p, .imagebg:not(.image--light) ul, .imagebg:not(.image--light) span, .imagebg:not(.image--light) blockquote {
     color: #fff;
 }
@@ -155,6 +128,10 @@ section {
 .row {
     flex-wrap: wrap;
 }
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 .text-center {
     text-align: center !important;
@@ -239,38 +216,14 @@ section {
 
 
 @media all and (min-height: 600px) and (min-width: 767px) {
-  .height-10 {
-    height: 10vh;
-  }
-  .height-20 {
-    height: 20vh;
-  }
-  .height-30 {
-    height: 30vh;
-  }
-  .height-40 {
-    height: 40vh;
-  }
+
   .height-50 {
     height: 50vh;
-  }
-  .height-60 {
-    height: 60vh;
-  }
-  .height-70 {
-    height: 70vh;
-  }
-  .height-80 {
-    height: 80vh;
-  }
-  .height-90 {
-    height: 90vh;
   }
   .height-100 {
     height: 100vh;
   }
 }
-
 
 .imagebg .container:not(.pos-absolute) {
     position: relative;
@@ -289,7 +242,6 @@ section {
     overflow: hidden;
     margin-bottom: 30px;
 }
-
 
 .box-item-4 {
   float: left;
@@ -342,61 +294,37 @@ section {
     width: 100%;
     height: 100%;
 }
-.hoveff:hover{
-    opacity:unset !important;
-    z-index:3;
-    image: rgba(158, 139, 139, 0.51);
-}
-.overlay:before{
-  position: absolute;
-  margin: 0 0 0 -25px;
-  top: 0;
-  left: 50%;
-  content:" ";
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-  transition: all 1000ms ease;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Antu_edit-find-mail.svg/768px-Antu_edit-find-mail.svg.png')50% / 70px no-repeat;
-}
-.overlay:hover:before{
-  top: 50%;
-  opacity: 1;
-}
-.overlay:hover img {
-  opacity: 0.5;
-  transition: opacity 1000ms ease;
-  -webkit-backface-visibility: hidden;
-  z-index:5;
-}
 
-
-
-
+/*Images 2 sectio*/
 [data-img] {
     background-size: cover !important;
     background-position: 50% 50% !important;
   }
   [data-img="1"] {
-        background: url('http://3.bp.blogspot.com/-080g21eoexw/TneUOrD5IaI/AAAAAAAAAO8/5HKRbKQIJcw/s1600/Japan.jpg');
+        background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/img/tsunami.jpg');
   }
   [data-img="2"] {
-        background: url('http://i.cdn-surfline.com/surfnews/images/2013/08_august/padang_finals/full/MICKCURLEY7701.jpg');
+        background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/img/ripcurl.jpg');
   }
   [data-img="3"] {
-        background: url('http://idata.over-blog.com/3/69/76/43/evenements/Conference-Jeandel---Mars-2012/Envisat---MERIS---Phytoplancton---Atlantique---Falklands---.jpg');
+        background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/img/gcurrents.jpg');
       }
   [data-img="4"] {
-        background: url('http://www.kenbradshaw.com/surf-school/wp-content/uploads/2010/02/Sunset_3_-e1266549163749.jpg');
+        background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/img/longwaves.jpg');
   }
   [data-img="5"] {
-        background: url('https://earth.nullschool.net/sample.jpg');
+        background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/img/tcurrents.jpg');
   }
   [data-img="6"] {
-        background: url('https://umaine.edu/news/wp-content/uploads/sites/3/2016/08/Phytoplankton-News-feature.jpg');
+        background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/img/drift.jpg');
   }
 
-
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+    outline: none;
+  }
 
 .header {
   z-index: 99;
@@ -404,29 +332,28 @@ section {
   position: absolute;
   text-transform: uppercase;
   padding: 2em 5rem;
-/*  display: flex !important;*/
 }
-.logo {
+@media (max-width: 768px) and (min-width: 320px) {
+.header {
+  padding: 2em 2em;
+}
+}
 
+.logo {
+letter-spacing: 0.2em;
+color: #edf5ff;
 }
 .name {
-  background-color: #1e1e1e;
+      background: linear-gradient(to right, #3c0fc5 10%, #c9ffe900 100%);
   padding: 0 1em;
-  font-weight: 600;
+
   letter-spacing: 0.2em;
+  color: white;
 }
-/*.menu{
-  justify-content: flex-end !important;
-  display: flex !important;
+@media (max-width: 768px) and (min-width: 320px) {
+.header .col-6 {
+  max-width: 50%;
 }
-*/
-.menu-icon {
-  width: 2em;
-  height: 2em;
-    border-radius: 50%;
-    text-align: center;
-    background: #fff;
-    display: inline-block;
 }
 a {
   text-decoration: none;
@@ -449,12 +376,24 @@ li.social-item:not(:last-child) {
 .icon {
   font-size: 2em;
 }
+li.social-item:not(:hover) {
+    opacity: .6;
+}
 .hover-element:hover {
       background: none !important;
 }
-
-
-
+.footer a {
+    color: #680cbc;
+}
+.header a {
+    color: #680cbc;
+}
+.header a:active {
+    color: white;
+}
+.overlay-menu a:active {
+    color: white;
+}
 .section-bg {
   padding: 7rem;
 }
@@ -486,8 +425,29 @@ li.social-item:not(:last-child) {
       margin-top: 2em !important;
       border: none !important;
 }
-
-
+.text-bg {
+  display: flex;
+}
+.text-bg p {
+    width: 50%;
+}
+@media (max-width: 768px) and (min-width: 320px) {
+  .text-bg p {
+      width: 100%;
+  }
+}
+.button-bg {
+      background: transparent;
+      border: 1px solid #fff;
+      padding: 0 1em;
+      padding: 0.5em 2em !important;
+    text-decoration: none;
+    border-radius: 6px !important;
+    margin-bottom: 2em !important;
+}
+.button-bg span:not(:last-child) {
+    margin-right: 1em;
+}
 .white {
   background: none;
 }
@@ -566,11 +526,6 @@ nav.i-right {
 .menu-vertical li {
     width: 100%;
 }
-
-
-
-
-
 
 .overlay-menu {
 display: none;
@@ -654,7 +609,9 @@ margin: 1em 0;
 color: #fff;
 }
 
-.exit {
+
+
+.close {
 position: absolute;
 top: 10px;
 right: 10px;
@@ -663,4 +620,19 @@ font-weight: 600;
 
 .menu-button {
 	float: right;
+}
+
+
+.c-item {
+display: flex;
+padding: 2em 2em;
+}
+.c-icon {
+  display: flex;
+}
+.c-text {
+  padding: 0 1.5em;
+}
+li.c-item:not(:last-child) {
+    border-bottom: 1px solid #3b3b3b;
 }
