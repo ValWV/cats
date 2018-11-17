@@ -1,11 +1,28 @@
 body {
     background: #252525;
 }
+.header {
+  background: #1b1b1b6e;
+}
 
 /*Post*/
+.post-art {
+  padding: 3em 0 0 0;
+}
 .post:not(:last-child) {
     margin-bottom: 1em;
 }
 .post-img {
   width: 100%;
+  margin: 2em 0;
+}
+.post-name {
+  width: max-content;
+}
+
+.section-bg h1 {
+  width: 100%;
+}
+h1 {
+  font-size: 2em;
 }
