@@ -323,7 +323,7 @@ body {
 }
  .logo {
      letter-spacing: 0.2em;
-     color: #edf5ff;
+     color: whitesmoke;
 }
  .name {
      background: linear-gradient(to right, #3c0fc5 10%, #c9ffe900 100%);
@@ -367,7 +367,7 @@ body {
      color: #680cbc;
 }
  .header a {
-     color: #680cbc;
+    color: #969696;
 }
  .header a:active {
      color: white;
