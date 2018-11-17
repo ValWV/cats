@@ -288,22 +288,22 @@ body {
      background-position: 50% 50% !important;
 }
  [data-img="1"] {
-     background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/img/tsunami.jpg');
+     background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/public_html/img/tsunami.jpg');
 }
  [data-img="2"] {
-     background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/img/ripcurl.jpg');
+     background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/public_html/img/ripcurl.jpg');
 }
  [data-img="3"] {
-     background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/img/gcurrents.jpg');
+     background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/public_html/img/gcurrents.jpg');
 }
  [data-img="4"] {
-     background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/img/longwaves.jpg');
+     background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/public_html/img/longwaves.jpg');
 }
  [data-img="5"] {
-     background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/img/tcurrents.jpg');
+     background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/public_html/img/tcurrents.jpg');
 }
  [data-img="6"] {
-     background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/img/drift.jpg');
+     background: url('https://raw.githubusercontent.com/ValWV/coursework-80procent-/master/public_html/img/drift.jpg');
 }
  a:hover, a:focus, a:active {
      text-decoration: none;
@@ -380,7 +380,7 @@ body {
 }
  @media (max-width: 768px) and (min-width: 320px) {
      .footer, .section-bg {
-         padding: 2.5em;
+     padding: 2.5em;
     }
 }
  .section-bg h1 {
